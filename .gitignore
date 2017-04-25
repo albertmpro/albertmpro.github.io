@@ -1,6 +1,7 @@
 package.json
 gulpfile.js 
 /dev/*
+/albertmpro/*
 /node_modules/*
 
 
