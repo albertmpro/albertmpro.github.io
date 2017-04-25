@@ -1,4 +1,5 @@
 package.json
+gulpfile.js 
 /dev/*
 /sass/*
 /node_modules/*
