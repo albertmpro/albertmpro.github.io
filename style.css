@@ -124,9 +124,7 @@ img {
     float: none; } }
 
 body {
-  background-image: url(images/blueback.png);
-  background-size: 100% 100%;
-  background-color: #93ABFF; }
+  background: linear-gradient(#5979E6, color3); }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, sans-serif; }
