@@ -2,15 +2,21 @@ body {
   margin: 0px;
   padding: 0px;
   width: 100%;
-  font-family: Verdana, Arial, sans-seirf;
+  font-family: Verdana, Geneva, sans-serif;
   font-size: 14pt;
-  background: #FFFFFF; }
+  background: #93ABFF;
+  color: #000000; }
 
 #mnu {
   display: none; }
 
 img {
   border: 0px; }
+
+#paper {
+  width: 100%;
+  position: absolute;
+  top: 0px; }
 
 .content {
   margin-right: auto;
@@ -117,5 +123,14 @@ img {
     display: block;
     float: none; } }
 
+body {
+  background-image: url(images/blueback.png);
+  background-repeat: repeat x;
+  background-color: #93ABFF; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, Geneva, sans-serif; }
+
 .content {
-  font-family: Verdana, Arial, sans-seirf; }
+  font-family: Verdana, Geneva, sans-serif;
+  background: #FFFFFF; }
