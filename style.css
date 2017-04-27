@@ -124,11 +124,47 @@ img {
     float: none; } }
 
 body {
-  background: linear-gradient(#5979E6, color3); }
+  background: -webkit-linear-gradient(#5979E6, #93ABFF);
+  background: -moz-linear-gradient(#5979E6, #93ABFF);
+  background: -o-linear-gradient(#5979E6, #93ABFF);
+  background: linear-gradient(#5979E6, #93ABFF);
+  background-repeat: repeat-x;
+  background-color: #93ABFF;
+  /*You browser stinks */ }
+
+.jumbo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #5979E6;
+  background: -webkit-linear-gradient(#1339B9, #5979E6);
+  background: -moz-linear-gradient(#1339B9, #5979E6);
+  background: -o-linear-gradient(#1339B9, #5979E6);
+  background: linear-gradient(#1339B9, #5979E6);
+  background-repeat: repeat-x;
+  background-color: #5979E6;
+  /*You browser stinks */
+  font-size: 2rem;
+  border: 1px solid #fff; }
+  .jumbo p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200; }
+  @media screen and (min-width: 768px) {
+    .jumbo {
+      padding-top: 48px;
+      padding-bottom: 48px; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, sans-serif; }
 
 .content {
   font-family: Verdana, Geneva, sans-serif;
-  background: #FFFFFF; }
+  background: -webkit-linear-gradient(#fff, #ccc, #fff);
+  background: -moz-linear-gradient(#fff, #ccc, #fff);
+  background: -o-linear-gradient(#fff, #ccc, #fff);
+  background: linear-gradient(#fff, #ccc, #fff);
+  background-repeat: repeat-x;
+  background-color: #fff;
+  /*You browser stinks */ }
