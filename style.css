@@ -134,7 +134,8 @@ body {
 
 .jumbo {
   width: 75%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
