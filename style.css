@@ -1,9 +1,21 @@
+@font-face {
+  font-family: amfont;
+  src: url("fonts/SertiBold.otf"); }
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
 body {
-  margin: 0px;
+  margin: 0;
   padding: 0px;
   width: 100%;
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 14pt;
+  font-size: 16pt;
   background: #93ABFF;
   color: #000000; }
 
@@ -11,7 +23,10 @@ body {
   display: none; }
 
 img {
-  border: 0px; }
+  border: 0px;
+  min-width: 150px;
+  height: auto;
+  display: inlne-block; }
 
 #paper {
   width: 100%;
@@ -21,7 +36,7 @@ img {
 .content {
   margin-right: auto;
   margin-left: auto;
-  padding: 15px;
+  padding: 7px;
   width: 75%; }
 
 .clear {
@@ -68,10 +83,17 @@ img {
   margin-left: auto;
   margin-right: auto; }
 
+.c2_pull {
+  width: 50%;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  float: right; }
+
 .cmain_pull {
   width: 66%;
   padding: 5px;
-  float: left;
+  float: right;
   margin-left: auto;
   margin-right: auto; }
 
@@ -117,19 +139,19 @@ img {
     width: 85%;
     margin-left: 15px;
     margin-right: 15px; }
-  .c2, .c3, .c4, .cmain, .cside, .cmain_pull, .cside_pull {
+  .c2, .c3, .c4, .cmain, .cside, .cmain_pull, .c2_pull, .cside_pull {
     padding: 5px;
     width: 95%;
     display: block;
     float: none; } }
 
 body {
-  background: -webkit-linear-gradient(#5979E6, #93ABFF);
-  background: -moz-linear-gradient(#5979E6, #93ABFF);
-  background: -o-linear-gradient(#5979E6, #93ABFF);
-  background: linear-gradient(#5979E6, #93ABFF);
+  background: -webkit-linear-gradient(#5979E6, #1339B9);
+  background: -moz-linear-gradient(#5979E6, #1339B9);
+  background: -o-linear-gradient(#5979E6, #1339B9);
+  background: linear-gradient(#5979E6, #1339B9);
   background-repeat: repeat-x;
-  background-color: #93ABFF;
+  background-color: #1339B9;
   /*You browser stinks */ }
 
 .jumbo {
@@ -160,15 +182,85 @@ body {
       padding-top: 48px;
       padding-bottom: 48px; } }
 
+#facebook {
+  width: 50px;
+  height: 50px;
+  background: url("images/facebook.png");
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 15px; }
+
+#tweet {
+  width: 50px;
+  height: 50px;
+  background: url("images/twitter.png");
+  background-size: 100% 100%;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 15px; }
+
+#logo {
+  width: 76px;
+  height: 76px;
+  background: url("images/logo.png");
+  background-size: 100% 100%;
+  display: inline-block;
+  margin-bottom: -30px;
+  background-repeat: no-repeat; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, Geneva, sans-serif; }
 
 .content {
   font-family: Verdana, Geneva, sans-serif;
-  background: -webkit-linear-gradient(#fff, #ccc, #fff);
-  background: -moz-linear-gradient(#fff, #ccc, #fff);
-  background: -o-linear-gradient(#fff, #ccc, #fff);
-  background: linear-gradient(#fff, #ccc, #fff);
-  background-repeat: repeat-x;
-  background-color: #fff;
-  /*You browser stinks */ }
+  background: #FFFFFF;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 7px; }
+
+.nav {
+  background: -webkit-radial-gradient(#333, #000);
+  background: -moz-radial-gradient(#333, #000);
+  background: -o-radial-gradient(#333, #000);
+  background: radial-gradient(#333, #000);
+  background-color: #000;
+  /*You browser stinks */
+  width: 75%;
+  padding: 0px 7px 1px 7px;
+  border-radius: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: amfont;
+  color: #fff;
+  list-style: none;
+  text-align: center; }
+  .nav li {
+    padding-left: 25px;
+    display: inline-block; }
+  .nav a, .nav a:link, .nav a:hover, .nav a:active {
+    color: #fff;
+    font-size: 18pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .nav a:hover {
+    color: #93ABFF; }
+
+hr {
+  border-top: 7px solid #1339B9; }
+
+.nav2 {
+  display: none; }
+  .nav2 a, .nav2 a:link, .nav2 a:hover, .nav2 a:active, .nav2 li, .nav2 ul {
+    display: none; }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none; }
+    .nav a, .nav a:link, .nav a:hover, .nav a:active, .nav li, .nav ul {
+      display: none; }
+  .nav2 {
+    display: none; }
+    .nav2 a, .nav2 a:link, .nav2 a:hover, .nav2 a:active, .nav2 li, .nav2 ul {
+      display: none; } }
