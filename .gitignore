@@ -1,8 +1,10 @@
 package.json
 gulpfile.js 
+nav.html
+footer.html
 head.html 
 /dev/*
-/albertmpro/*
+
 /node_modules/*
 
 
