@@ -11,7 +11,9 @@ audio, canvas, progress, video {
   vertical-align: baseline; }
 
 body {
-  margin: 0;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
   padding: 0px;
   width: 100%;
   font-family: Verdana, Geneva, sans-serif;
@@ -186,55 +188,95 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
   font-family: Verdana, Geneva, sans-serif;
+  top: 75px;
   background: #FFFFFF;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 7px;
   position: relative; }
 
-.nav {
+.footer {
+  width: 100%;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#nav {
   background: -webkit-radial-gradient(#333, #000);
   background: -moz-radial-gradient(#333, #000);
   background: -o-radial-gradient(#333, #000);
   background: radial-gradient(#333, #000);
   background-color: #000;
   /*You browser stinks */
-  width: 75%;
-  position: reltive;
-  min-height: 70px;
+  width: 100%;
+  position: fixed;
+  height: 60px;
   border-radius: 12px;
   margin-left: auto;
   margin-right: auto;
   font-family: amfont;
   color: #fff;
-  list-style: none;
+  z-index: 1;
   text-align: center; }
-  .nav li {
+  #nav li {
+    position: relative;
     padding-left: 25px;
-    display: inline-block; }
-  .nav a, .nav a:link, .nav a:hover, .nav a:active {
+    top: -25px;
+    display: inline-block;
+    list-style: none; }
+  #nav a, #nav a:link, #nav a:hover, #nav a:active {
     color: #fff;
     font-size: 16pt;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none; }
-  .nav a:hover {
+  #nav a:hover {
     color: #93ABFF; }
 
 hr {
   border-top: 7px solid #1339B9; }
 
-.nav2 {
+#nav2 {
   display: none; }
-  .nav2 a, .nav2 a:link, .nav2 a:hover, .nav2 a:active, .nav2 li, .nav2 ul {
+  #nav2 a, #nav2 a:link, #nav2 a:hover, #nav2 a:active, #nav2 li, #nav2 hr {
     display: none; }
 
 @media screen and (max-width: 768px) {
-  .nav {
+  #mnu {
+    z-index: 2; }
+  #nav {
     display: none; }
-    .nav a, .nav a:link, .nav a:hover, .nav a:active, .nav li, .nav ul {
+    #nav a, #nav a:link, #nav a:hover, #nav a:active, #nav li, #nav ul {
       display: none; }
-  .nav2 {
-    display: none; }
-    .nav2 a, .nav2 a:link, .nav2 a:hover, .nav2 a:active, .nav2 li, .nav2 ul {
-      display: none; } }
+  #nav2 {
+    display: none;
+    background: -webkit-radial-gradient(#333, #000);
+    background: -moz-radial-gradient(#333, #000);
+    background: -o-radial-gradient(#333, #000);
+    background: radial-gradient(#333, #000);
+    background-color: #000;
+    /*You browser stinks */
+    width: 100%;
+    position: fixed;
+    top: 75px;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: amfont;
+    color: #fff;
+    z-index: 1;
+    text-align: center; }
+    #nav2 a, #nav2 a:link, #nav2 a:hover, #nav2 a:active, #nav2 li, #nav2 hr {
+      display: none; }
+    #nav2 li {
+      padding-left: 25px;
+      display: block;
+      list-style: none; }
+    #nav2 a, #nav2 a:link, #nav2 a:hover, #nav2 a:active {
+      color: #fff;
+      font-size: 16pt;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      text-decoration: none; }
+    #nav2 a:hover {
+      color: #93ABFF; } }
