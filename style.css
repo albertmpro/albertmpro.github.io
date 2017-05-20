@@ -273,7 +273,7 @@ hr {
     #nav a, #nav a:link, #nav a:hover, #nav a:active, #nav li, #nav ul {
       display: none; }
   #nav2 {
-    display: none;
+    display: block;
     background: -webkit-radial-gradient(#333, #000);
     background: -moz-radial-gradient(#333, #000);
     background: -o-radial-gradient(#333, #000);
@@ -282,25 +282,17 @@ hr {
     /*You browser stinks */
     width: 100%;
     position: fixed;
-    top: 75px;
+    height: 50px;
     border-radius: 12px;
     margin-left: auto;
     margin-right: auto;
     font-family: amfont;
     color: #fff;
-    z-index: 1;
-    text-align: center; }
-    #nav2 a, #nav2 a:link, #nav2 a:hover, #nav2 a:active, #nav2 li, #nav2 hr {
-      display: none; }
-    #nav2 li {
-      padding-left: 25px;
-      display: block;
-      list-style: none; }
-    #nav2 a, #nav2 a:link, #nav2 a:hover, #nav2 a:active {
-      color: #fff;
-      font-size: 16pt;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      text-decoration: none; }
-    #nav2 a:hover {
-      color: #93ABFF; } }
+    text-align: center;
+    z-index: 1; }
+    #nav2 p {
+      text-transform: uppercase; }
+    #nav2 select {
+      width: 200px;
+      font-size: 14pt;
+      text-align: center; } }
