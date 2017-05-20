@@ -26,9 +26,11 @@ body {
 
 img {
   border: 0px;
+  width: 85%;
+  text-align: center;
   min-width: 150px;
   height: auto;
-  display: inlne-block; }
+  display: block; }
 
 #paper {
   width: 100%;
@@ -117,6 +119,10 @@ img {
 
 .justify {
   text-align: justify; }
+
+.cblock {
+  margin-left: auto;
+  margin-right: auto; }
 
 #mnu {
   display: none; }
@@ -235,6 +241,24 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
   border-top: 7px solid #1339B9; }
+
+.jpad {
+  padding: 25px; }
+
+.jmain {
+  background: -webkit-radial-gradient(#5979E6, #1339B9);
+  background: -moz-radial-gradient(#5979E6, #1339B9);
+  background: -o-radial-gradient(#5979E6, #1339B9);
+  background: radial-gradient(#5979E6, #1339B9);
+  background-color: #1339B9;
+  /*You browser stinks */
+  color: #fff;
+  border-radius: 7px;
+  padding: 25px;
+  font-size: 14pt;
+  margin-left: auto;
+  margin-right: auto;
+  text-overflow: none; }
 
 #nav2 {
   display: none; }
