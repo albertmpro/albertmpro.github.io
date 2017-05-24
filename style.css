@@ -17,7 +17,7 @@ body {
   padding: 0px;
   width: 100%;
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 16pt;
+  font-size: 14pt;
   background: #93ABFF;
   color: #000000; }
 
@@ -27,10 +27,9 @@ body {
 img {
   border: 0px;
   width: 85%;
-  text-align: center;
-  min-width: 150px;
   height: auto;
-  display: block; }
+  display: inline-block;
+  padding: 0px; }
 
 #paper {
   width: 100%;
@@ -55,58 +54,76 @@ img {
   width: 50%;
   padding: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .c3 {
   width: 33%;
   padding: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .c4 {
   width: 25%;
   padding: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .c5 {
   width: 20%;
   padding: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .cmain {
   width: 66%;
   padding: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .cside {
   width: 30%;
   padding: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .c2_pull {
   width: 50%;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
-  float: right; }
+  float: right;
+  background: inherit;
+  color: inherit; }
 
 .cmain_pull {
   width: 66%;
   padding: 5px;
   float: right;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .cside_pull {
   width: 30%;
   padding: 5px;
   float: right;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: inherit;
+  color: inherit; }
 
 .left {
   text-align: left; }
@@ -122,7 +139,8 @@ img {
 
 .cblock {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  display: block; }
 
 #mnu {
   display: none; }
@@ -151,6 +169,8 @@ img {
     padding: 5px;
     width: 95%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     float: none; } }
 
 body {
@@ -194,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .content {
   font-family: Verdana, Geneva, sans-serif;
-  top: 75px;
+  top: 85px;
   background: #FFFFFF;
   padding-left: 7px;
   padding-right: 7px;
@@ -216,7 +236,8 @@ h1, h2, h3, h4, h5, h6 {
   /*You browser stinks */
   width: 100%;
   position: fixed;
-  height: 60px;
+  height: 75px;
+  max-height: 180px;
   border-radius: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -227,12 +248,12 @@ h1, h2, h3, h4, h5, h6 {
   #nav li {
     position: relative;
     padding-left: 25px;
-    top: -25px;
+    top: -20px;
     display: inline-block;
     list-style: none; }
   #nav a, #nav a:link, #nav a:hover, #nav a:active {
     color: #fff;
-    font-size: 16pt;
+    font-size: 18pt;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none; }
@@ -246,37 +267,54 @@ hr {
   padding: 25px; }
 
 .jmain {
-  background: -webkit-radial-gradient(#5979E6, #1339B9);
-  background: -moz-radial-gradient(#5979E6, #1339B9);
-  background: -o-radial-gradient(#5979E6, #1339B9);
-  background: radial-gradient(#5979E6, #1339B9);
-  background-color: #1339B9;
-  /*You browser stinks */
-  color: #fff;
-  border-radius: 7px;
   padding: 25px;
-  font-size: 14pt;
+  background: #000;
+  color: #fff;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
+  font-weight: bold;
+  line-height: 35px hr;
+    line-height-border-top: 7px solid;
+  background: #1339B9;
+  font-size: 14pt;
   text-overflow: none; }
+  .jmain p {
+    text-align: left;
+    font-weight: bold;
+    line-height: 35px; }
 
 .jmain2 {
-  background: -webkit-radial-gradient(#333, #000);
-  background: -moz-radial-gradient(#333, #000);
-  background: -o-radial-gradient(#333, #000);
-  background: radial-gradient(#333, #000);
-  background-color: #000;
-  /*You browser stinks */
-  color: #fff;
-  border-radius: 7px;
   padding: 25px;
-  font-size: 14pt;
+  background: #000;
+  color: #fff;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
+  font-weight: bold;
+  line-height: 35px hr;
+    line-height-border-top: 7px solid;
+  background: -webkit-linear-gradient(#333, #000);
+  background: -moz-linear-gradient(#333, #000);
+  background: -o-linear-gradient(#333, #000);
+  background: linear-gradient(#333, #000);
+  background-repeat: repeat-x;
+  background-color: #000;
+  /*You browser stinks */
+  font-size: 14pt;
   text-overflow: none; }
+  .jmain2 p {
+    text-align: left;
+    font-weight: bold;
+    line-height: 35px; }
 
 .jtext {
   font-size: 2rem; }
+
+.midpic {
+  width: 350px; }
 
 #nav2 {
   display: none; }
