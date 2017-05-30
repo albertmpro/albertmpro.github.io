@@ -88,15 +88,16 @@ img {
   margin-left: auto;
   margin-right: auto;
   background: inherit;
-  color: inherit; }
+  color: inherit;
+  display: block; }
 
 .cside {
   width: 30%;
   padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
+  float: right;
   background: inherit;
-  color: inherit; }
+  color: inherit;
+  display: block; }
 
 .c2_pull {
   width: 50%;
@@ -114,7 +115,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   background: inherit;
-  color: inherit; }
+  color: inherit;
+  display: block; }
 
 .cside_pull {
   width: 30%;
@@ -123,7 +125,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   background: inherit;
-  color: inherit; }
+  color: inherit;
+  display: block; }
 
 .left {
   text-align: left; }
@@ -203,7 +206,7 @@ body {
 #logo {
   width: 75px;
   height: 75px;
-  background: url("images/logo.png");
+  background: url("images/am3.png");
   background-size: 100% 100%;
   display: inline-block;
   margin-bottom: -30px;
@@ -265,6 +268,60 @@ hr {
 
 .jpad {
   padding: 25px; }
+
+.cardbreak {
+  height: 150px; }
+
+.flashcard {
+  width: 220px;
+  height: 300px;
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .flashcard:active .front {
+    transform: perspective(600px) rotateY(-180deg); }
+  .flashcard:active .back {
+    transform: perspective(600px) rotateY(0deg); }
+  .flashcard .front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 220px;
+    height: 300px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    -ms-transition: transform .5s linear 0s;
+    -webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s; }
+  .flashcard .back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    width: 220px;
+    height: 300px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+    -ms-transition: transform .5s linear 0s;
+    -webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s; }
+  .flashcard .front {
+    background: #fff;
+    border: 4px solid #000;
+    color: #000;
+    font-szie: 16pt;
+    font-weight: bold;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-align: center;
+    padding-top: 140px; }
+  .flashcard .back {
+    background: #fff;
+    border: 4px solid #1339B9;
+    color: #1339B9;
+    font-size: 14pt;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 140px; }
 
 .jmain {
   padding: 25px;
