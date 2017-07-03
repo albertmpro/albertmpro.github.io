@@ -346,8 +346,6 @@ img {
 
 @media screen and (max-width: 768px) {
   #facebook, #linkedin, #twitter {
-    width: 30px;
-    height: 30px;
     float: none; }
   .container {
     margin-top: 75px; }
