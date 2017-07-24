@@ -81,6 +81,9 @@ img {
     margin-left: 15px;
     margin-right: 15px; } }
 
+hr {
+  border-top: 7px solid #0066cc; }
+
 #logo {
   width: 75px;
   height: 75px;
