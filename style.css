@@ -12,8 +12,8 @@ body {
   padding: 0px;
   width: 100%;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.2rem; }
+  font-size: 1.3rem;
+  line-height: 1.3rem; }
 
 #mnu {
   display: none; }
@@ -84,10 +84,10 @@ img {
 body {
   background: #000;
   color: #fff;
-  line-height: 75%; }
+  line-height: 155%; }
 
 hr {
-  border-top: 7px solid #0066cc; }
+  border-top: 7px solid #05305B; }
 
 #logo {
   width: 75px;
@@ -145,7 +145,7 @@ a:hover, a:active {
 
 .container {
   width: 75%;
-  line-height: 75%;
+  line-height: 150%;
   margin-top: 75px;
   margin-left: auto;
   margin-right: auto;
@@ -309,6 +309,8 @@ a:hover, a:active {
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 2%; } }
+  .container li {
+    line-height: 170%; }
 
 #nav li {
   list-style: None;
@@ -338,12 +340,12 @@ a:hover, a:active {
   top: 0px;
   width: 100%;
   height: 50px;
-  background: -webkit-linear-gradient(#0066cc, #1a8cff);
-  background: -moz-linear-gradient(#0066cc, #1a8cff);
-  background: -o-linear-gradient(#0066cc, #1a8cff);
-  background: linear-gradient(#0066cc, #1a8cff);
+  background: -webkit-linear-gradient(#05305B, #3486D6);
+  background: -moz-linear-gradient(#05305B, #3486D6);
+  background: -o-linear-gradient(#05305B, #3486D6);
+  background: linear-gradient(#05305B, #3486D6);
   background-repeat: repeat-x;
-  background-color: #0066cc;
+  background-color: #05305B;
   /*You browser stinks */
   color: #fff; }
   .navbar h4 {
@@ -390,11 +392,11 @@ a:hover, a:active {
       display: block;
       padding-top: 0px; }
     .navbar li {
-      background: #0066cc;
+      background: #05305B;
       width: 100%;
       padding: 6px; }
     .navbar #nav2 {
-      background: #0066cc;
+      background: #05305B;
       padding: 9px;
       width: 100%;
       height: auto;
