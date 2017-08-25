@@ -83,8 +83,7 @@ img {
 
 body {
   background: #000;
-  color: #fff;
-  line-height: 155%; }
+  color: #fff; }
 
 hr {
   border-top: 7px solid #05305B; }
@@ -309,6 +308,8 @@ a:hover, a:active {
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 2%; } }
+  .container p {
+    line-height: 130%; }
   .container li {
     line-height: 170%; }
 
