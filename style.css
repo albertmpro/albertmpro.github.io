@@ -128,7 +128,7 @@ hr {
   margin-left: 20px; }
 
 .footer {
-  height: 3s30px;
+  height: 330px;
   width: 100%;
   display: block; }
 
@@ -312,6 +312,9 @@ a:hover, a:active {
     line-height: 130%; }
   .container li {
     line-height: 170%; }
+  .container .gallery {
+    background: #636363;
+    color: #fff; }
 
 #nav li {
   list-style: None;
