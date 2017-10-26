@@ -312,9 +312,6 @@ a:hover, a:active {
     line-height: 130%; }
   .container li {
     line-height: 170%; }
-  .container .gallery {
-    background: #636363;
-    color: #fff; }
 
 #nav li {
   list-style: None;
